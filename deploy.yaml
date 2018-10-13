@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: kerasimageclassificationapp
+ labels:
+   name: kerasapp-pod
+spec:
+ containers:
+   - name: keras-model
+     image: olegemirates.azurecr.io/keras-app:latest
+     ports:
+       - containerPort: 5000

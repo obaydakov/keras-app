@@ -8,5 +8,6 @@ spec:
  containers:
    - name: keras-model
      image: olegemirates.azurecr.io/keras-app:latest
+     imagePullPolicy: IfNotPresent
      ports:
        - containerPort: 5000
